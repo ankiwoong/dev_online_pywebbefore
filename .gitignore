@@ -1,3 +1,4 @@
+
 # Created by https://www.gitignore.io/api/venv,django,python,windows,visualstudiocode
 # Edit at https://www.gitignore.io/?templates=venv,django,python,windows,visualstudiocode
 
@@ -10,6 +11,7 @@ local_settings.py
 db.sqlite3
 db.sqlite3-journal
 media
+secrets.*
 
 # If your build process includes running collectstatic, then you probably don't need or want to include staticfiles/
 # in your Git repository. Update and uncomment the following line accordingly.
@@ -214,5 +216,7 @@ $RECYCLE.BIN/
 
 # Windows shortcuts
 *.lnk
+
+*.vscode
 
 # End of https://www.gitignore.io/api/venv,django,python,windows,visualstudiocode
