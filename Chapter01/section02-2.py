@@ -31,11 +31,15 @@ for i in range(1, 10):
 print(이름)
 
 # 함수 선언
+
+
 def 인사():
     print("안녕하세요. 반갑습니다.")
 
+
 def greeting():
     print('Hello!')
+
 
 # 함수 호출
 인사()
@@ -43,8 +47,11 @@ def greeting():
 greeting()
 
 # 클래스
+
+
 class Cokkie:
     pass
+
 
 # 객체 생성
 cookie = Cokkie()
