@@ -2,7 +2,7 @@
 # 파이썬 데이터 타입(자료형)
 # 데이터타입, 숫자형, 숫자형 연산
 
-'''
+"""
 int : 정수
 float : 실수
 complex : 복소수
@@ -16,20 +16,18 @@ dict : 사전
 bytearray
 byte
 frozenset
-'''
+"""
 
 # 데이터 타입(Data Type)
 import math
+
 v_str1 = "NiceMan"
 v_bool = True
 v_str2 = "GoodBoy"
 v_float = 10.0
 v_int = 7
 v_list = [v_str1, v_str2]
-v_dict = {
-    "name": "niceman",
-    "age": 25
-}
+v_dict = {"name": "niceman", "age": 25}
 v_tuple = 3, 5, 7
 v_set = {7, 8, 9}
 
@@ -139,16 +137,16 @@ print("f1 % i1 :", f1 % i1)
 
 # **
 print("##### ** #####")
-print("2 ** 3: ", 2 ** 3)
-print("i1 ** i2: ", i1 ** i2)
-print("f1 ** f2: ", f1 ** f2)
-print("i1 ** f1: ", i1 ** f1)
-print("f1 ** i1: ", f1 ** i1)
+print("2 ** 3: ", 2**3)
+print("i1 ** i2: ", i1**i2)
+print("f1 ** f2: ", f1**f2)
+print("i1 ** f1: ", i1**f1)
+print("f1 ** i1: ", f1**i1)
 
 # 형 변환 실습
-a = 5.
+a = 5.0
 b = 4
-c = .4
+c = 0.4
 d = 7.7
 
 # 타입 출력
@@ -163,7 +161,7 @@ print(float(True))  # Bool -> 정수
 print(int(False))  # Bool -> 정수
 print(float(False))  # Bool -> 정수
 print(complex(3))  # 정수 -> 복소수
-print(complex('3'))  # 문자 -> 복소수
+print(complex("3"))  # 문자 -> 복소수
 print(complex(False))  # Bool -> 복소수
 
 # 수치 연산 함수
@@ -175,7 +173,7 @@ print(pow(5, 3))
 # 외부 모듈
 
 # ceil
-print(math.ceil(5.1))   # x 이상의 수 중에서 가장 작은 정수
+print(math.ceil(5.1))  # x 이상의 수 중에서 가장 작은 정수
 print(math.ceil(8.999))
 
 # floor
