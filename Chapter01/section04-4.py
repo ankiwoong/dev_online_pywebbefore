@@ -2,78 +2,100 @@
 # 파이썬 데이터 타입(자료형)
 # 딕셔너리, 집합 자료형
 
-# 딕셔너리(Dictionary) : 순서 x, 중복 x, 수정 o, 삭제 o
+# 딕셔너리 자료형(순서X, 중복X, 수정O, 삭제O)
 
-# Key, Value(Json) -> MongoDB
 # 선언
-a = {'name': 'kim', 'Phone': '010-7777-7777', 'birth': 860109}
-b = {0: 'Hello Python', 1: 'Hello Coding'}
-c = {'arr': [1, 2, 3, 4, 5]}
+a = {'name': 'Kim', 'phone': '01012345678', 'birth': '870124'}
+b = {0: 'Hello python!'}
+c = {'arr': [1, 2, 3, 4]}
 
-# print(type(a))
+print('a - ', type(a), a)
+print('b - ', type(b), b)
+print('c - ', type(c), c)
 
 # 출력
-print(a['name'])
-print(a.get('name'))
-print(a.get('address'))
-print(c['arr'][1:3])
+print('a - ', a['name'])  # 존재X -> 에러 발생
+print('a - ', a.get('name'))  # 존재X -> None 처리
+print('b - ', b[0])
+print('b - ', b.get(0))
+print('c - ', c['arr'])
+print('c - ', c['arr'][3])
+print('c - ', c.get('arr'))
 
 # 딕셔너리 추가
-a['address'] = 'Seoul'
-print(a)
-a['rank'] = [1, 3, 4]
-a['rank2'] = (1, 2, 3,)
-print(a)
+a['address'] = 'seoul'
+print('a - ', a)
+a['rank'] = [1, 2, 3]
+print('a - ', a)
 
-# keys, values, items
-print(a.keys())
-print(list(a.keys()))
+# dict_keys, dict_values, dict_items : 반복문(iterate) 사용 가능
+print('a - ', a.keys())
+print('b - ', b.keys())
+print('c - ', c.keys())
 
-temp = list(a.keys())
-print(temp[1:3])
+print('a - ', list(a.keys()))
+print('b - ', list(b.keys()))
+print('c - ', list(c.keys()))
 
-print(a.values())
-print(list(a.values()))
+print('a - ', a.values())
+print('b - ', b.values())
+print('c - ', c.values())
 
-print(list(a.items()))
-print(2 in b)
-print('name' not in a)
+print('a - ', list(a.values()))
+print('b - ', list(b.values()))
+print('c - ', list(c.values()))
 
-# 집합(sets) (순서 x, 중복 x)
+print('a - ', a.items())
+print('b - ', b.items())
+print('c - ', c.items())
+
+print('a - ', list(a.items()))
+print('b - ', list(b.items()))
+print('c - ', list(c.items()))
+
+print('a - ', 'name' in a)
+print('a - ', 'addr' in a)
+
+# 집합(Sets) 자료형(순서X, 중복X)
+
+# 선언
 a = set()
 b = set([1, 2, 3, 4])
-c = set([1, 4, 5, 6, 6])
+c = set([1, 4, 5, 6])
+d = set([1, 2, 'Pen', 'Cap', 'Plate'])
 
-print(type(a))
-print(c)
+print('a - ', type(a), a)
+print('b - ', type(b), b)
+print('c - ', type(c), c)
+print('d - ', type(d), d)
 
+# 튜플 변환
 t = tuple(b)
-print(t)
-l = list(b)
-print(l)
+print('t - ', type(t), t)
+print('t - ', t[0], t[1:3])
 
-print()
-print()
+# 리스트 변환
+l = list(c)
+print('l - ', type(l), l)
+print('l - ', l[0], l[1:3])
 
+# 집합 자료형 활용
 s1 = set([1, 2, 3, 4, 5, 6])
 s2 = set([4, 5, 6, 7, 8, 9])
 
-print(s1.intersection(s2))
-print(s1 & s2)
+print('l - ', s1 & s2)
+print('l - ', s1.intersection(s2))
 
-print(s1 | s2)
-print(s1.union(s2))
+print('l - ', s1 | s2)
+print('l - ', s1.union(s2))
 
-print(s1 - s2)
-print(s1.difference(s2))
+print('l - ', s1 - s2)
+print('l - ', s1.difference(s2))
 
 # 추가 & 제거
-s3 = set([7, 8, 10, 15])
-s3.add(18)
-# s3.add(7)
-print(s3)
+s1 = set([1, 2, 3, 4])
+s1.add(5)
+print('s1 - ', s1)
 
-s3.remove(15)
-print(s3)
-
-print(type(s3))
+s1.remove(2)
+print('s1 - ', s1)
