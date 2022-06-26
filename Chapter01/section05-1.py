@@ -74,33 +74,33 @@ a = 100
 b = 60
 c = 15
 
-print('and : ', a > b and b > c)  # a > b > c
-print('or : ', a > b or b > c)
-print('not : ', not a > b)
-print('not : ', not b > c)
+print("and : ", a > b and b > c)  # a > b > c
+print("or : ", a > b or b > c)
+print("not : ", not a > b)
+print("not : ", not b > c)
 print(not True)
 print(not False)
 
 # 산술, 관계, 논리 우선순위
 # 산술 > 관계 > 논리 순서로 적용
 
-print('ex1 : ', 3 + 12 > 7 + 3)
-print('ex2 : ', 5 + 10 * 3 > 7 + 3 * 20)
-print('ex3 : ', 5 + 10 > 3 and 7 + 3 == 10)
-print('ex4 : ', 5 + 10 > 0 and not 7 + 3 == 10)
+print("ex1 : ", 3 + 12 > 7 + 3)
+print("ex2 : ", 5 + 10 * 3 > 7 + 3 * 20)
+print("ex3 : ", 5 + 10 > 3 and 7 + 3 == 10)
+print("ex4 : ", 5 + 10 > 0 and not 7 + 3 == 10)
 
 score1 = 90
-score2 = 'A'
+score2 = "A"
 
 # 복수의 조건이 모두 참일 경우에 실행.
-if score1 >= 90 and score2 == 'A':
+if score1 >= 90 and score2 == "A":
     print("합격하셨습니다.")
 else:
     print("불합격입니다.")
 
 id1 = "gold"
 id2 = "admin"
-grade = 'super'
+grade = "super"
 
 if id1 == "gold" or id2 == "admin":
     print("관리자 로그인 성공")
@@ -142,7 +142,7 @@ else:
 
 q = [1, 2, 3]
 w = {7, 8, 9, 9}
-e = {"name": 'Kim', "city": "seoul", "grade": "B"}
+e = {"name": "Kim", "city": "seoul", "grade": "B"}
 r = (10, 12, 14)
 
 print(1 in q)
