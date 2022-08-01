@@ -1,0 +1,147 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .container {
+            background-color: #0c4b33;
+            color: #fff;
+            position: relative;
+        }
+
+        .container2 {
+            width: 200px;
+            height: 200px;
+            background-color: pink;
+            position: relative;
+        }
+
+        img {
+            /* float: left; */
+            position: absolute;
+            bottom: 0;
+            right: 0;
+        }
+
+        p {
+            display: inline;
+        }
+
+        h1 {}
+    </style>
+</head>
+
+<body>
+    <!-- normal flow 벗어나 복잡한 방식의 레이아웃을 배치하는 방법 -->
+    <!-- 1. float
+2. position -->
+    <div class="container">
+        <h1>Django</h1>
+        <div class="container2">
+            <img src="https://static.djangoproject.com/img/fundraising-heart.cd6bb84ffd33.svg" alt="heart">
+        </div>
+        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Quisque ultrices vitae quam nec tempor. Aliquam et
+            mattis tellus, vel aliquet ligula. In sem urna, tincidunt id molestie sit amet, viverra nec ligula. Orci
+            varius natoque penatibus et magnis dis
+            arturient montes, nascetur ridiculus mus. Phasellus pharetra ornare dolor non condimentum. Morbi pharetra ut
+            felis sed gravida. Maecenas vitae dapibus lectus, et egestas erat. Vivamus at leo gravida odio scelerisque
+            vestibulum ut at neque. Pellentesque
+            dictum turpis sit amet leo blandit sagittis. Curabitur iaculis ex in dui vehicula rhoncus. Pellentesque
+            vehicula libero mi, eu pharetra augue venenatis et. Maecenas ac erat sit amet purus interdum faucibus et
+            quis nisl. Aenean in justo et nisl pharetra
+            tempor. Suspendisse at bibendum urna, ut sagittis nibh. Aliquam lacinia quam porta, luctus enim ac,
+            facilisis erat.</p>
+        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Quisque ultrices vitae quam nec tempor. Aliquam et
+            mattis tellus, vel aliquet ligula. In sem urna, tincidunt id molestie sit amet, viverra nec ligula. Orci
+            varius natoque penatibus et magnis dis
+            arturient montes, nascetur ridiculus mus. Phasellus pharetra ornare dolor non condimentum. Morbi pharetra ut
+            felis sed gravida. Maecenas vitae dapibus lectus, et egestas erat. Vivamus at leo gravida odio scelerisque
+            vestibulum ut at neque. Pellentesque
+            dictum turpis sit amet leo blandit sagittis. Curabitur iaculis ex in dui vehicula rhoncus. Pellentesque
+            vehicula libero mi, eu pharetra augue venenatis et. Maecenas ac erat sit amet purus interdum faucibus et
+            quis nisl. Aenean in justo et nisl pharetra
+            tempor. Suspendisse at bibendum urna, ut sagittis nibh. Aliquam lacinia quam porta, luctus enim ac,
+            facilisis erat.</p>
+        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Quisque ultrices vitae quam nec tempor. Aliquam et
+            mattis tellus, vel aliquet ligula. In sem urna, tincidunt id molestie sit amet, viverra nec ligula. Orci
+            varius natoque penatibus et magnis dis
+            arturient montes, nascetur ridiculus mus. Phasellus pharetra ornare dolor non condimentum. Morbi pharetra ut
+            felis sed gravida. Maecenas vitae dapibus lectus, et egestas erat. Vivamus at leo gravida odio scelerisque
+            vestibulum ut at neque. Pellentesque
+            dictum turpis sit amet leo blandit sagittis. Curabitur iaculis ex in dui vehicula rhoncus. Pellentesque
+            vehicula libero mi, eu pharetra augue venenatis et. Maecenas ac erat sit amet purus interdum faucibus et
+            quis nisl. Aenean in justo et nisl pharetra
+            tempor. Suspendisse at bibendum urna, ut sagittis nibh. Aliquam lacinia quam porta, luctus enim ac,
+            facilisis erat.</p>
+        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Quisque ultrices vitae quam nec tempor. Aliquam et
+            mattis tellus, vel aliquet ligula. In sem urna, tincidunt id molestie sit amet, viverra nec ligula. Orci
+            varius natoque penatibus et magnis dis
+            arturient montes, nascetur ridiculus mus. Phasellus pharetra ornare dolor non condimentum. Morbi pharetra ut
+            felis sed gravida. Maecenas vitae dapibus lectus, et egestas erat. Vivamus at leo gravida odio scelerisque
+            vestibulum ut at neque. Pellentesque
+            dictum turpis sit amet leo blandit sagittis. Curabitur iaculis ex in dui vehicula rhoncus. Pellentesque
+            vehicula libero mi, eu pharetra augue venenatis et. Maecenas ac erat sit amet purus interdum faucibus et
+            quis nisl. Aenean in justo et nisl pharetra
+            tempor. Suspendisse at bibendum urna, ut sagittis nibh. Aliquam lacinia quam porta, luctus enim ac,
+            facilisis erat.</p>
+        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Quisque ultrices vitae quam nec tempor. Aliquam et
+            mattis tellus, vel aliquet ligula. In sem urna, tincidunt id molestie sit amet, viverra nec ligula. Orci
+            varius natoque penatibus et magnis dis
+            arturient montes, nascetur ridiculus mus. Phasellus pharetra ornare dolor non condimentum. Morbi pharetra ut
+            felis sed gravida. Maecenas vitae dapibus lectus, et egestas erat. Vivamus at leo gravida odio scelerisque
+            vestibulum ut at neque. Pellentesque
+            dictum turpis sit amet leo blandit sagittis. Curabitur iaculis ex in dui vehicula rhoncus. Pellentesque
+            vehicula libero mi, eu pharetra augue venenatis et. Maecenas ac erat sit amet purus interdum faucibus et
+            quis nisl. Aenean in justo et nisl pharetra
+            tempor. Suspendisse at bibendum urna, ut sagittis nibh. Aliquam lacinia quam porta, luctus enim ac,
+            facilisis erat.</p>
+        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Quisque ultrices vitae quam nec tempor. Aliquam et
+            mattis tellus, vel aliquet ligula. In sem urna, tincidunt id molestie sit amet, viverra nec ligula. Orci
+            varius natoque penatibus et magnis dis
+            arturient montes, nascetur ridiculus mus. Phasellus pharetra ornare dolor non condimentum. Morbi pharetra ut
+            felis sed gravida. Maecenas vitae dapibus lectus, et egestas erat. Vivamus at leo gravida odio scelerisque
+            vestibulum ut at neque. Pellentesque
+            dictum turpis sit amet leo blandit sagittis. Curabitur iaculis ex in dui vehicula rhoncus. Pellentesque
+            vehicula libero mi, eu pharetra augue venenatis et. Maecenas ac erat sit amet purus interdum faucibus et
+            quis nisl. Aenean in justo et nisl pharetra
+            tempor. Suspendisse at bibendum urna, ut sagittis nibh. Aliquam lacinia quam porta, luctus enim ac,
+            facilisis erat.</p>
+        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Quisque ultrices vitae quam nec tempor. Aliquam et
+            mattis tellus, vel aliquet ligula. In sem urna, tincidunt id molestie sit amet, viverra nec ligula. Orci
+            varius natoque penatibus et magnis dis
+            arturient montes, nascetur ridiculus mus. Phasellus pharetra ornare dolor non condimentum. Morbi pharetra ut
+            felis sed gravida. Maecenas vitae dapibus lectus, et egestas erat. Vivamus at leo gravida odio scelerisque
+            vestibulum ut at neque. Pellentesque
+            dictum turpis sit amet leo blandit sagittis. Curabitur iaculis ex in dui vehicula rhoncus. Pellentesque
+            vehicula libero mi, eu pharetra augue venenatis et. Maecenas ac erat sit amet purus interdum faucibus et
+            quis nisl. Aenean in justo et nisl pharetra
+            tempor. Suspendisse at bibendum urna, ut sagittis nibh. Aliquam lacinia quam porta, luctus enim ac,
+            facilisis erat.</p>
+        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Quisque ultrices vitae quam nec tempor. Aliquam et
+            mattis tellus, vel aliquet ligula. In sem urna, tincidunt id molestie sit amet, viverra nec ligula. Orci
+            varius natoque penatibus et magnis dis
+            arturient montes, nascetur ridiculus mus. Phasellus pharetra ornare dolor non condimentum. Morbi pharetra ut
+            felis sed gravida. Maecenas vitae dapibus lectus, et egestas erat. Vivamus at leo gravida odio scelerisque
+            vestibulum ut at neque. Pellentesque
+            dictum turpis sit amet leo blandit sagittis. Curabitur iaculis ex in dui vehicula rhoncus. Pellentesque
+            vehicula libero mi, eu pharetra augue venenatis et. Maecenas ac erat sit amet purus interdum faucibus et
+            quis nisl. Aenean in justo et nisl pharetra
+            tempor. Suspendisse at bibendum urna, ut sagittis nibh. Aliquam lacinia quam porta, luctus enim ac,
+            facilisis erat.</p>
+
+        <a href="#"><em>The web framework</em> for perfectionists with deadlines.</a>
+        <ul>
+            <li>Overview</li>
+            <li>Download</li>
+            <li>Documentation</li>
+            <li>News</li>
+            <li>Community</li>
+        </ul>
+    </div>
+</body>
+
+</html>
