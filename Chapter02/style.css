@@ -1,0 +1,6 @@
+/* 모든 css 초기화(가상 포함) */
+*,
+*::before,
+*::after{
+    box-sizing: border-box;
+}
