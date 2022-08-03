@@ -1,40 +1,91 @@
-/* 모든 css 초기화(가상 포함) */
+/* margin: 10px 20px 30px 40px; /* top-right-bottom-left 순 */
+/*           10px
+     -------------------
+     |                 |
+     |                 |
+40px |                 | 30px
+     |                 |
+     |                 |
+     ------------------- 
+             30px
+*/
+
+/* margin: 0 auto; /* top, bottom에 0, right, left에 auto  */
+/*            0
+     -------------------
+     |                 |
+     |                 |
+auto |                 | auto
+     |                 |
+     |                 |
+     ------------------- 
+              0
+*/
+
+/* margin: 10px; /* top-right-bottom-left 순  */
+/*           10px
+     -------------------
+     |                 |
+     |                 |
+10px |                 | 10px
+     |                 |
+     |                 |
+     ------------------- 
+             10px
+*/
+
 *,
 *::before,
-*::after{
-    box-sizing: border-box;
+*::after {
+  box-sizing: border-box;
+}
+html {
+  font-size: 10px;
+}
+body {
+  min-width: 1060px;
+  font-size: 1.8rem;
+}
+.header {
+  background: aqua;
+  height: 72px;
+}
+.container {
+  max-width: 1400px;
+  background: red;
+  margin: 0 auto;
+  padding: 0 20px;
+  position: relative;
+}
+.logo {
+  margin: 0;
+  position: absolute;
+  top: 0;
+  left: 0;
+}
+.nav {
+  text-align: right;
+}
+.list {
+  margin: 0;
+}
+.list-item {
+  display: inline-block;
 }
 
-/* HEADER */
-.header{
-    background: yellow;
+.hero-section {
+  background: skyblue;
 }
-
-/* MAIN */
-.main{
-    background: lime;
+.main-content {
+  float: left;
+  width: 70%;
+  background: pink;
 }
-.hero-section{
-    background: aqua;
+.side-content {
+  float: right;
+  width: 30%;
+  background: yellow;
 }
-.main-content{
-    background: blue;
-    float: left;
-    width: 70%;
-}
-.side-content{
-    background: pink;
-    float: right;
-    width: 30%;
-}
-
-/* CONTENT-INFO */
-.content-info{
-    background: green;
-}
-.links{
-    background: lightgreen
-}
-.footer{
-    background: purple
+.footer {
+  background: green;
 }
