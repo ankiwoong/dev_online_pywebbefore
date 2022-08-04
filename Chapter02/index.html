@@ -2,17 +2,18 @@
 <html lang="ko">
 
 <head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>The Web framework for perfectionists with deadlinse | Django</title>
-    <link rel="stylesheet" href="style.css">
-    <link rel="stylesheet" href="normalize.css">
+    <link rel="stylesheet" href="style.css" />
+    <link rel="stylesheet" href="normalize.css" />
     <!-- 상대요소 : 지금 현재 내 위치에서의 파일 위치 ex>./style.css -->
     <!-- 절대요소 : 특정 파일의 고유의 위치 ex>c\sytle.css-->
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500;700;900&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500;700;900&display=swap"
+        rel="stylesheet" />
 </head>
 
 <body>
@@ -43,11 +44,10 @@
                     Django makes it easier to build better Web apps more quickly and
                     with less code.
                 </p>
-                <a href="#" class="cta">
-                    Get started with Django
-                </a>
+                <a href="#" class="cta"> Get started with Django </a>
             </div>
         </div>
+
         <div class="container-float">
             <div class="main-content">
                 <h2 class="main-title">Stay in the loop</h2>
@@ -58,20 +58,26 @@
                 <div class="mailing-layout">
                     <div class="mailing">
                         <h3 class="mailing-title">
-                            <a href="#">
-                                Using Django
-                            </a>
+                            <a href="#"> Using Django </a>
                         </h3>
                         <p class="mailing-desc">
                             Get help with Django and follow announcements.
                         </p>
-                        <!-- form 요소 -->
+
+                        <form action="#" class="mailing-form" method="post">
+                            <label for="email-contribute">send e-mail for contribution</label>
+                            <input type="email" placeholder="Enter email" id="email-contribute"
+                                name="email-contribute" />
+                            <button type="submit" class="mailing-form-btn">Submit</button>
+                        </form>
+
                         <p class="mailing-desc">
                             You can also subscribe by sending an email to
                             <a
                                 href="mailto:django-users+subscribe@googlegroups.com">django-users+subscribe@googlegroups.com</a>
                             and following the instructions that will be sent to you.
                         </p>
+
                     </div>
                     <div class="mailing">
                         <h3 class="mailing-title">
@@ -89,9 +95,7 @@
                     </div>
                 </div>
             </div>
-            <div class="side-content">
-                사이드 콘텐츠
-            </div>
+            <div class="side-content">사이드 콘텐츠</div>
         </div>
     </main>
 
